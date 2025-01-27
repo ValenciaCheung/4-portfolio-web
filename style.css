@@ -1,0 +1,122 @@
+:root {
+  --main-branding-color: rgb(59, 177, 251);
+  --background-color: rgb(219, 254, 254);
+  --white-color: rgb(255, 255, 255);
+  --grey-color: rgb(244, 244, 244);
+  --box--shadow: inset 0 0 6px rgb(255, 255, 255);
+}
+body {
+  font-family: Times New Roman, Times, serif;
+  padding-top: 100px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 56px;
+}
+h1 :hover {
+  color: var(--main-branding-color);
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+}
+a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: var(--main-branding-color);
+  text-decoration: underline;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  padding-bottom: 80px;
+}
+.navigation-links a {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.navigation-links a:hover {
+  background-color: var(--main-branding-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  box-shadow: var(--box--shadow);
+}
+.primary-link {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.primary-link:hover {
+  background-color: var(--main-branding-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  box-shadow: var(--box--shadow);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  margin-top: 100px;
+  padding: 60px;
+}
+footer a {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+footer a:hover {
+  color: var(--main-branding-color);
+}
+.contact-me {
+  background-color: var(--background-color);
+  padding: 60px;
+  margin-top: 60px;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  gap: 12px;
+}
+.about-me-1 {
+  width: 50%;
+  background-color: var(--grey-color);
+  border-radius: 12px;
+  padding: 12px;
+}
+.about-me-2 {
+  width: 50%;
+  background-color: var(--grey-color);
+  border-radius: 12px;
+  padding: 12px;
+}
