@@ -30,7 +30,6 @@ a {
   color: rgb(0, 0, 0);
   display: block; /* 让链接变成块级元素，独占一行 */
   text-align: center; /* 居中文本 */
-  margin: 0 auto; /* 让链接本身水平居中 */
 }
 a:hover {
   color: var(--main-branding-color);
