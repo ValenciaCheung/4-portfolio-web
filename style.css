@@ -15,6 +15,7 @@ h1 {
   justify-content: center;
   font-size: 56px;
 }
+
 h1 :hover {
   color: var(--main-branding-color);
 }
@@ -25,18 +26,28 @@ h2 {
 }
 a {
   justify-content: center;
-  text-align: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  display: block; /* 让链接变成块级元素，独占一行 */
+  text-align: center; /* 居中文本 */
+  margin: 0 auto; /* 让链接本身水平居中 */
 }
 a:hover {
   color: var(--main-branding-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 h3 {
   display: flex;
   justify-content: center;
   color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 .navigation-links {
   display: flex;
@@ -104,18 +115,14 @@ footer a:hover {
 }
 .about-me {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 60px;
   gap: 12px;
 }
-.about-me-1 {
-  width: 50%;
-  background-color: var(--grey-color);
-  border-radius: 12px;
-  padding: 12px;
-}
+.about-me-1,
 .about-me-2 {
-  width: 50%;
+  width: 100%; /* 小屏幕时占满整个宽度 */
+  max-width: 100%; /* 确保不会超出父容器 */
   background-color: var(--grey-color);
   border-radius: 12px;
   padding: 12px;
@@ -138,5 +145,12 @@ footer a:hover {
   .project-desciption {
     padding: 0;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me-1,
+  .about-me-2 {
+    flex: 1 1 48%; /* 让两个文本框平均分配空间 */
   }
 }
