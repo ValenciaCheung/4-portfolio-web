@@ -131,7 +131,7 @@ footer .email-link {
 }
 
 footer .email-link:hover {
-  color: var(--branding-color);
+  color: var(--main-branding-color);
 }
 
 /* 确保 .social-links 在 email-link 下面，并水平居中 */
